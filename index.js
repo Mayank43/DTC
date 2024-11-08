@@ -1,6 +1,7 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
 const { JsonDB, Config } = require("node-json-db");
 require("dotenv").config();
+const port = process.env.PORT || 4000;
 
 // Initialize the database
 const db = new JsonDB(new Config("voiceLogDB", true, false, "/"));
